@@ -1,0 +1,78 @@
+.titulo{
+  font-size: 6rem;
+  text-align: center;
+  width: 70%;
+}
+.parrafo{
+  font-size: 1.5rem;
+  text-align: center;
+  width: 60%;
+  overflow-wrap: break-word;
+}
+.boton{
+  text-decoration: none;
+  padding:12px;
+  width: 280px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--color3);
+  color: #fff;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.imagen{
+  border-radius: 50%;
+}
+
+.cards{
+  display: flex;
+  width: 100%;
+  margin-top: 80px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card-simple{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+.card-simple__imagen{
+  width: 300px;
+  height: 300px;
+}
+.subtitulo{
+  text-align: center;
+  font-size: 2rem;
+}
+.parrafo-pequeño{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.circulo-info{
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circulo-info__titulo{
+  font-size: 4rem;
+}
+
+.contenedor-about__card{
+  display: flex;
+}

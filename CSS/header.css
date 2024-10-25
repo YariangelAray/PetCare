@@ -1,0 +1,36 @@
+.logo{
+  padding: 20px 10px;
+  margin-left: 50px;
+}
+.logo__img{
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.encabezado__menu{
+  display: flex;
+  align-items: center;
+}
+.encabezado__link{
+  height: 100%;
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.encabezado__link:hover{
+  background-color: var(--color-principal);
+}
+.encabezado__link--busqueda{
+  height: 80px;
+  min-width: 80px;
+  width: 80px;
+  border-radius: 50%;
+}

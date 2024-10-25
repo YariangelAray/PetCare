@@ -1,9 +1,10 @@
 :root{
   --color-principal: #5380c1;
+  --color-principal-transparent: rgba(83, 129, 193, 0.6);
   --color-secundario: #739ee3;
   --color3: #edc315;
   --color-piepagina: #343434;
-  --img1:url(../IMG/Imagen-principal.png);
+  --img1:url(../IMG/Imagen-grande.png);
   --img2: url(../IMG/Imagen-terciaria.png);
   --img3: url(../IMG/Imagen-secundaria.png);
   --fondo-formas: url(../IMG/fondo-formas.png);
