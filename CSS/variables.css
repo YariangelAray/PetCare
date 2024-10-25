@@ -1,0 +1,12 @@
+:root{
+  --color-principal: #5380c1;
+  --color-secundario: #739ee3;
+  --color3: #edc315;
+  --color-piepagina: #343434;
+  --img1:url(../IMG/Imagen-principal.png);
+  --img2: url(../IMG/Imagen-terciaria.png);
+  --img3: url(../IMG/Imagen-secundaria.png);
+  --fondo-formas: url(../IMG/fondo-formas.png);
+  --fondo-manchas: url(../IMG/fondo-manchas.png);
+  --fondo-mancha: url(../IMG/fondo-mancha.png);
+}
