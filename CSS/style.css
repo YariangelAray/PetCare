@@ -1,4 +1,5 @@
 @import url(variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* ESTRUCTURA */
 
@@ -6,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .encabezado{
@@ -73,4 +75,75 @@
 .contenedor-final{
   background-image: var(--img3), linear-gradient(var(--color3), var(--color3));
   background-blend-mode: multiply;
+}
+
+/* jeffer */
+.contenedor-precios{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #4ca4da;
+  padding:  30px;
+}
+
+.titulo_precios{
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 110px;
+}
+
+.titulo_precios h4{
+  font-size: 56px;
+  color: #fff;
+}
+
+.titulo_precios p{
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+  max-width: 600px;
+}
+
+.card{
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 32%;
+  margin: 10px;
+  color: var(--color-titulo-premium);
+}
+
+.cards{
+  display: flex;
+  width: 1000px;
+}
+
+.precio {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #4ca4da;
+}
+
+.descripcion {
+  font-size: 14px;
+  color: #666;
+  color: #4ca4da;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ffa800;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.boton:hover {
+  background-color: #e69500;
 }
