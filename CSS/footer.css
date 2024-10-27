@@ -1,0 +1,51 @@
+
+.piepagina__detalles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.2rem;
+}
+
+.detalles__titulo {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.detalles__texto, .detalles__link {
+    font-size: 1.2rem;
+}
+
+.detalles__link {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.detalles__link:hover {
+    color: white;
+}
+
+.sociales {
+    display: flex;
+    gap: 1rem;
+}
+
+.sociales__link {
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.sociales__link:hover {
+opacity: 0.5;
+}
+
+.sociales__link img {
+    width: 20px;
+    height: 20px;
+}
