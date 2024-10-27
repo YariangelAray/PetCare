@@ -1,15 +1,24 @@
-.titulo{
-  font-size: 6rem;
-  text-align: center;
+.contenedor__textos{
   width: 70%;
 }
-.parrafo{
+.contenedor__textos .parrafo{
+  padding: 0 10%;
+}
+
+.contenedor__titulo{
+  font-size: 6rem;
+  text-align: center;
+  width: 100%;
+}
+.contenedor__parrafo{
   font-size: 1.5rem;
   text-align: center;
-  width: 60%;
+  width: 100%;
   overflow-wrap: break-word;
 }
-.boton{
+
+.boton-principal{
+  display: flex;
   text-decoration: none;
   padding:12px;
   width: 280px;
@@ -21,17 +30,18 @@
   font-size: 1.3rem;
   font-weight: 500;
   margin-top: 30px;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.imagen{
+.contenedor__imagen{
   border-radius: 50%;
 }
 
-.cards{
+.contenedor__cards{
   display: flex;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 50px;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
@@ -49,18 +59,18 @@
   width: 300px;
   height: 300px;
 }
-.subtitulo{
+.contenedor__subtitulo{
   text-align: center;
   font-size: 2rem;
 }
-.parrafo-pequeño{
+.contenedor__parrafo-pequeño{
   text-align: center;
   font-size: 1.2rem;
 }
 
 .circulo-info{
-  width: 240px;
-  height: 240px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   border: 8px solid #fff;
   display: flex;
@@ -75,4 +85,24 @@
 
 .contenedor-about__card{
   display: flex;
+  padding: 0 70px;
+  gap: 50px;
+}
+
+.contenedor-about__card div{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 0 20px;
+}
+.contenedor-about__card .contenedor__titulo,
+.contenedor-about__card .contenedor__parrafo {
+  text-align: start;
+}
+
+.contenedor-about__imagen{
+  width: 550px;
+  height: 550px;
+  min-width: 550px;
 }
