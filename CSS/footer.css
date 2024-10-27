@@ -1,3 +1,14 @@
+.piepagina{
+   width: 100%;
+   height: auto;
+   background-color: var(--color-piepagina);
+   padding: 40px;
+   color: var(--color5);
+   display: grid;
+   grid-template-columns: 600px repeat(3, 1fr);
+   gap: 2rem;
+}
+
 
 .piepagina__detalles {
     display: flex;
@@ -22,7 +33,7 @@
 }
 
 .detalles__link:hover {
-    color: white;
+    color: var(--color5);
 }
 
 .sociales {
@@ -31,7 +42,7 @@
 }
 
 .sociales__link {
-    background-color: white;
+    background-color: var(--color5);
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -42,7 +53,7 @@
 }
 
 .sociales__link:hover {
-opacity: 0.5;
+    opacity: 0.5;
 }
 
 .sociales__link img {
