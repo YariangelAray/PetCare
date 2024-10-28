@@ -12,4 +12,13 @@
   --fondo-formas: url(../IMG/fondo-formas.png);
   --fondo-manchas: url(../IMG/fondo-manchas.png);
   --fondo-mancha: url(../IMG/fondo-mancha.png);
+  --color-titulo-precios: white;
+  --subtitulo-precios:white;
+  --fondo-cards:white;
+  --boton:#ffa800;
+  --fondo-footer:#333333;
+  --color-letra-link:#cccccc;
+  --hover-link: white;
+  --hover-boton:#e69500;
+  --fondo-redes:white;
 }
