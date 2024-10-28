@@ -27,13 +27,13 @@
 }
 
 .detalles__link {
-    color: #cccccc;
+    color: var(--color-letra-link);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .detalles__link:hover {
-    color: var(--color5);
+    color: var(--hover-link);
 }
 
 .sociales {
@@ -42,7 +42,7 @@
 }
 
 .sociales__link {
-    background-color: var(--color5);
+    background-color: var(--fondo-redes);
     width: 35px;
     height: 35px;
     border-radius: 50%;

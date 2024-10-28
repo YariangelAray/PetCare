@@ -10,6 +10,7 @@
 .contenedor__titulo{
   font-size: 5rem;
   width: 100%;
+  color: var(--color-titulos);
 }
 .contenedor__parrafo{
   font-size: 1.5rem;
@@ -23,7 +24,7 @@
   width: 260px;
   cursor: pointer;
   border: none;
-  background-color: var(--color3);
+  background-color: var(--boton);
   color: var(--color5);
   border-radius: 30px;
   font-size: 1.3rem;
@@ -34,7 +35,7 @@
   transition: 0.5s;
 }
 .boton-principal:hover {
-  background-color: var(--color4);
+  background-color: var(--hover-boton);
 }
 
 .contenedor__imagen{
@@ -115,7 +116,7 @@
 /* Jefferson */
 
 .card{
-  background-color: var(--color5);
+  background-color: var(--fondo-cards);
   border-radius: 10px;
   padding: 25px;
   display: flex;
