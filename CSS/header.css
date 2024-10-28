@@ -1,3 +1,4 @@
+
 .encabezado{
   width: 100%;
   height: 130px;
@@ -18,7 +19,6 @@
   height: 100%;
   object-fit: contain;
 }
-
 
 .encabezado__nav{
   display: flex;
