@@ -79,6 +79,7 @@
   background-blend-mode: multiply;
 }
 
+/* solución del conflicto*/
 
 /* Responsiva */
 @media (max-width: 1200px) {
