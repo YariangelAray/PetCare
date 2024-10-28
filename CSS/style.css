@@ -80,3 +80,132 @@
   background-image: var(--img3), linear-gradient(var(--color3), var(--color3));
   background-blend-mode: multiply;
 }
+
+/* solución del conflicto*/
+
+/* Responsiva */
+@media (max-width: 1200px) {
+
+  .encabezado{
+    height: 100px;
+    padding: 0 15px;
+  }
+  .encabezado__link{
+    font-size: 1.4rem;
+    padding: 20px;
+  }
+  .logo{
+    padding: 10px;
+    margin-left: 0;
+  }
+
+  .contenedor-principal{
+    background-position: center;
+  }
+  .contenedor__textos{
+    width: 90%;
+  }
+  .contenedor__titulo{
+    font-size: 4rem;
+  }
+  .contenedor__subtitulo, .circulo-info__titulo{
+    font-size: 2rem;
+  }
+  .contenedor__parrafo,
+  .detalles__titulo{
+    font-size: 1.4rem;
+  }
+  .contenedor__parrafo-pequeño,
+  .detalles__texto,
+  .detalles__link{
+    font-size: 1.1rem;
+  }
+  .boton-principal{
+    width: 200px;
+  }
+  .contenedor__cards{
+    margin-top: 10px;
+  }
+  .card-simple,
+  .card{
+    width: 260px;
+    margin: 1rem;
+  }
+  .card-simple__imagen{
+    width: 200px;
+    height: 200px;
+  }
+  .circulo-info{
+    width: 180px;
+    height: 180px;
+  }
+  .contenedor-about__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .contenedor-about__card div{
+    align-items: center;
+  }
+  .contenedor-about__card .contenedor__titulo,
+  .contenedor-about__card .contenedor__parrafo {
+    text-align: center;
+  }
+  .contenedor-about__imagen{
+    width: 300px;
+    height: 300px;
+    min-width: 300px;
+  }
+
+  .card__imagen{
+    width: 140px;
+  }
+
+  .contenedor__parrafo-grande{
+    font-size: 2rem;
+  }
+  .nombre-doctor {
+    font-size: 3rem;
+  }
+
+  .piepagina {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .piepagina__detalles{
+    gap: 1rem;
+  }
+
+}
+
+@media (max-width: 780px) {
+
+  .contenedor{
+    height: auto;
+    padding: 100px 50px;
+  }
+
+  .contenedor-principal, 
+  .contenedor-final{
+    height: 100vh;
+  }
+
+  .contenedor__cards{
+    flex-direction:column ;
+    align-items: center;
+  }
+
+  .encabezado{
+    height: 80px;
+  }
+
+  .encabezado__link{
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .contenedor-detalles__grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
