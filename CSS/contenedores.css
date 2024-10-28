@@ -3,6 +3,7 @@
   text-align: center;
   overflow-wrap: break-word;
 }
+
 .contenedor__textos .parrafo{
   padding: 0 10%;
 }
@@ -12,6 +13,7 @@
   width: 100%;
   color: var(--color-titulos);
 }
+
 .contenedor__parrafo{
   font-size: 1.5rem;
   width: 100%;
@@ -34,6 +36,7 @@
   justify-content: center;
   transition: 0.5s;
 }
+
 .boton-principal:hover {
   background-color: var(--hover-boton);
 }
@@ -59,14 +62,17 @@
   justify-content: center;
   margin: 2rem;
 }
+
 .card-simple__imagen{
   width: 280px;
   height: 280px;
 }
+
 .contenedor__subtitulo{
   text-align: center;
   font-size: 2rem;
 }
+
 .contenedor__parrafo-pequeño{
   text-align: center;
   font-size: 1.2rem;
@@ -101,6 +107,7 @@
   justify-content: center;
   padding: 0 20px;
 }
+
 .contenedor-about__card .contenedor__titulo,
 .contenedor-about__card .contenedor__parrafo {
   text-align: start;
@@ -111,7 +118,6 @@
   height: 550px;
   min-width: 550px;
 }
-
 
 /* Jefferson */
 
@@ -157,10 +163,10 @@
 .contenedor-detalles__contenido h3 {
   text-align: start;
 }
+
 .contenedor-detalles__contenido p {
   text-align: start;
 }
-
 
 .contenedor__parrafo-grande{
   font-size: 2.5rem;

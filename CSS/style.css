@@ -13,7 +13,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
 .principal{
   display: flex;
   flex-direction: column;
@@ -34,8 +33,6 @@
   transition: 0.5s;
 }
 
-
-
 /* CONTENEDORES */
 
 .contenedor-principal{
@@ -49,7 +46,6 @@
   background-position: top;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  
 }
 .contenedor-estadisticas{
   background-image: var(--img2), linear-gradient(var(--color3), var(--color3));
