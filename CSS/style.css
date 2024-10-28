@@ -83,7 +83,6 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
-  background-color: #4ca4da;
   padding:  30px;
 }
 
@@ -95,18 +94,18 @@
 
 .titulo_precios h4{
   font-size: 56px;
-  color: #fff;
+  color: var(--color-titulo-precios);
 }
 
 .titulo_precios p{
-  color: #fff;
+  color: var(--subtitulo-precios);
   font-size: 16px;
   margin-top: 10px;
   max-width: 600px;
 }
 
 .card{
-  background-color: #fff;
+  background-color: var(--fondo-cards);
   border-radius: 7px;
   padding: 25px;
   text-align: center;
@@ -130,22 +129,20 @@
 
 .descripcion {
   font-size: 14px;
-  color: #666;
-  color: #4ca4da;
 }
 
 .boton {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: #ffa800;
-  color: #fff;
+  background-color: var(--boton);
+  color: #fff; 
   text-decoration: none;
   border-radius: 5px;
 }
 
 .boton:hover {
-  background-color: #e69500;
+  background-color: var(--hover-boton);
 }
 
 
@@ -256,7 +253,7 @@
 /*pie de pagina*/
 
 .piepagina {
-  background-color: #333333;
+  background-color: var(--fondo-footer);
   color: white;
   padding: 40px;
   display: grid;
@@ -282,14 +279,14 @@
 }
 
 .detalles__link {
-  color: #cccccc;
+  color: var(--color-letra-link);
   text-decoration: none;
   margin-bottom: 10px;
   transition: color 0.3s ease;
 }
 
 .detalles__link:hover {
-  color: white;
+  color: var(--hover-link);
 }
 
 .sociales {
@@ -298,7 +295,7 @@
 }
 
 .sociales__link {
-  background-color: white;
+  background-color: var(--fondo-redes);
   width: 35px;
   height: 35px;
   border-radius: 50%;
