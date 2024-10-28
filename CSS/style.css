@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url(variables.css);
-@import url(header.css);
-@import url(contenedores.css);
-@import url(footer.css);
 
 /* ESTRUCTURA */
 
@@ -10,14 +6,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
+.encabezado{
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-principal);
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  display: flex;
+  padding: 10px 20px;
+}
 
 .principal{
   display: flex;
   flex-direction: column;
-  transition: 0.5s;
 }
 
 .contenedor{
@@ -26,30 +30,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  padding: 50px;
+  padding: 50px 30px;
   background-size: cover;
-  background-position:center;
-  color: var(--color5);
-  transition: 0.5s;
 }
 
-
+.piepagina{
+  width: 100%;
+  height: auto;
+  background-color: var(--color-piepagina);
+  padding: 25px 20px 30px;
+}
 
 /* CONTENEDORES */
 
 .contenedor-principal{
   background-image: var(--img1), linear-gradient(var(--color-principal), var(--color-principal));
-  background-position: center -150px;
+  background-position: center -180px;
   background-blend-mode: multiply;
+
 }
 .contenedor-productos{
   background-image: var(--fondo-manchas);
   background-color: var(--color-secundario);
-  background-position: top;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  
+  background-position: top center;
 }
 .contenedor-estadisticas{
   background-image: var(--img2), linear-gradient(var(--color3), var(--color3));
@@ -57,9 +60,6 @@
 }
 .contenedor-about{
   background-color: var(--color-principal);
-  background-repeat: no-repeat;
-  background-image: var(--fondo-formas);
-  background-size: 80% 80%;
 }
 .contenedor-about--color{
   background-color: var(--color-secundario);
@@ -69,140 +69,8 @@
 }
 .contenedor-detalles{
   background-color: var(--color-secundario);
-  background-image: var(--fondo-mancha);
-  background-repeat: no-repeat;
-  background-size: 105% 120%;
-  background-position: bottom -100px;
 }
 .contenedor-final{
   background-image: var(--img3), linear-gradient(var(--color3), var(--color3));
   background-blend-mode: multiply;
-}
-
-
-/* Responsiva */
-@media (max-width: 1200px) {
-
-  .encabezado{
-    height: 100px;
-    padding: 0 15px;
-  }
-  .encabezado__link{
-    font-size: 1.4rem;
-    padding: 20px;
-  }
-  .logo{
-    padding: 10px;
-    margin-left: 0;
-  }
-
-  .contenedor-principal{
-    background-position: center;
-  }
-  .contenedor__textos{
-    width: 90%;
-  }
-  .contenedor__titulo{
-    font-size: 4rem;
-  }
-  .contenedor__subtitulo, .circulo-info__titulo{
-    font-size: 2rem;
-  }
-  .contenedor__parrafo,
-  .detalles__titulo{
-    font-size: 1.4rem;
-  }
-  .contenedor__parrafo-pequeño,
-  .detalles__texto,
-  .detalles__link{
-    font-size: 1.1rem;
-  }
-  .boton-principal{
-    width: 200px;
-  }
-  .contenedor__cards{
-    margin-top: 10px;
-  }
-  .card-simple,
-  .card{
-    width: 260px;
-    margin: 1rem;
-  }
-  .card-simple__imagen{
-    width: 200px;
-    height: 200px;
-  }
-  .circulo-info{
-    width: 180px;
-    height: 180px;
-  }
-  .contenedor-about__card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
-  .contenedor-about__card div{
-    align-items: center;
-  }
-  .contenedor-about__card .contenedor__titulo,
-  .contenedor-about__card .contenedor__parrafo {
-    text-align: center;
-  }
-  .contenedor-about__imagen{
-    width: 300px;
-    height: 300px;
-    min-width: 300px;
-  }
-
-  .card__imagen{
-    width: 140px;
-  }
-
-  .contenedor__parrafo-grande{
-    font-size: 2rem;
-  }
-  .nombre-doctor {
-    font-size: 3rem;
-  }
-
-  .piepagina {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .piepagina__detalles{
-    gap: 1rem;
-  }
-
-}
-
-@media (max-width: 780px) {
-
-  .contenedor{
-    height: auto;
-    padding: 100px 50px;
-  }
-
-  .contenedor-principal, 
-  .contenedor-final{
-    height: 100vh;
-  }
-
-  .contenedor__cards{
-    flex-direction:column ;
-    align-items: center;
-  }
-
-  .encabezado{
-    height: 80px;
-  }
-
-  .encabezado__link{
-    font-size: 1rem;
-    padding: 10px;
-  }
-
-  .contenedor-detalles__grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
 }
