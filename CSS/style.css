@@ -27,7 +27,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 50px;
+  padding: 80px;
   background-size: cover;
   background-position:center;
   color: var(--color5);
@@ -40,7 +40,7 @@
 
 .contenedor-principal{
   background-image: var(--img1), linear-gradient(var(--color-principal), var(--color-principal));
-  background-position: center -150px;
+  background-position: center -10vw;
   background-blend-mode: multiply;
 }
 .contenedor-productos{
@@ -72,7 +72,7 @@
   background-image: var(--fondo-mancha);
   background-repeat: no-repeat;
   background-size: 105% 120%;
-  background-position: bottom -100px;
+  background-position: bottom -8vw;
 }
 .contenedor-final{
   background-image: var(--img3), linear-gradient(var(--color3), var(--color3));
@@ -81,101 +81,34 @@
 
 
 /* Responsiva */
-@media (max-width: 1200px) {
+
+
+@media (max-width: 800px) {
 
   .encabezado{
     height: 100px;
-    padding: 0 15px;
   }
   .encabezado__link{
-    font-size: 1.4rem;
-    padding: 20px;
-  }
-  .logo{
-    padding: 10px;
-    margin-left: 0;
+    display: none;
   }
 
-  .contenedor-principal{
-    background-position: center;
-  }
-  .contenedor__textos{
-    width: 90%;
-  }
-  .contenedor__titulo{
-    font-size: 4rem;
-  }
-  .contenedor__subtitulo, .circulo-info__titulo{
-    font-size: 2rem;
-  }
-  .contenedor__parrafo,
-  .detalles__titulo{
-    font-size: 1.4rem;
-  }
-  .contenedor__parrafo-pequeño,
-  .detalles__texto,
-  .detalles__link{
-    font-size: 1.1rem;
-  }
-  .boton-principal{
-    width: 200px;
-  }
-  .contenedor__cards{
-    margin-top: 10px;
-  }
-  .card-simple,
-  .card{
-    width: 260px;
-    margin: 1rem;
-  }
-  .card-simple__imagen{
-    width: 200px;
-    height: 200px;
-  }
-  .circulo-info{
-    width: 180px;
-    height: 180px;
-  }
-  .contenedor-about__card{
+  .encabezado__link--circular{
+    height: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 2rem;
-  }
-  .contenedor-about__card div{
-    align-items: center;
-  }
-  .contenedor-about__card .contenedor__titulo,
-  .contenedor-about__card .contenedor__parrafo {
-    text-align: center;
-  }
-  .contenedor-about__imagen{
-    width: 300px;
-    height: 300px;
-    min-width: 300px;
-  }
-
-  .card__imagen{
-    width: 140px;
-  }
-
-  .contenedor__parrafo-grande{
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color5);
     font-size: 2rem;
+    padding: 20px;
+    font-weight: 500;
+    height: 60px;
+    min-width: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 15px;
   }
-  .nombre-doctor {
-    font-size: 3rem;
-  }
-
-  .piepagina {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .piepagina__detalles{
-    gap: 1rem;
-  }
-
-}
-
-@media (max-width: 780px) {
 
   .contenedor{
     height: auto;
@@ -185,24 +118,88 @@
   .contenedor-principal, 
   .contenedor-final{
     height: 100vh;
+    background-position: bottom;
   }
 
-  .contenedor__cards{
-    flex-direction:column ;
+  .contenedor-principal{
+    background-position: center;
+  }
+  .contenedor__textos{
+    width: 90%;
+  }
+  .contenedor__titulo{
+    font-size: 8vw;
+  }
+  .contenedor__subtitulo, .circulo-info__titulo{
+    font-size: 5vw;
+  }
+  .contenedor__parrafo,
+  .detalles__titulo{
+    font-size: 3vw;
+  }
+  .contenedor__parrafo-pequeño,
+  .detalles__texto,
+  .detalles__link,
+  .boton-principal{
+    font-size: 2.5vw;
+  }
+  
+  .boton-principal{
+    width: 25vw;
+  }
+  .card-simple{
+    width: 40vw;
+  }
+  .card-simple__imagen{
+    width: 28vw;
+    height: 28vw;
+  }
+
+  .circulo-info{
+    width: 24vw;
+    height: 24vw;
+  }
+  .contenedor-about__card .contenedor__titulo,
+  .contenedor-about__card .contenedor__parrafo {
+    text-align: center;
+  }
+
+  .contenedor-about__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 40px;
+  }
+  .contenedor-about__imagen {
+    width: 50vw;
+    height: 50vw;
+  }
+  .contenedor-about__card div{
     align-items: center;
   }
 
-  .encabezado{
-    height: 80px;
+  .contenedor__cards{
+    flex-direction:column;
+    align-items: center;
   }
 
-  .encabezado__link{
-    font-size: 1rem;
-    padding: 10px;
+  .card{
+    width: 50vw;
   }
 
   .contenedor-detalles__grid {
     grid-template-columns: 1fr;
     gap: 10px;
+    grid-auto-rows: 20vw;
   }
-}
+  .contenedor__parrafo-grande{
+    font-size: 5vw;
+  }
+  .piepagina {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .piepagina__detalles{
+    gap: 1rem;
+  }
+} 
