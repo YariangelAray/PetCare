@@ -166,7 +166,8 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    padding: 0 40px;
+    padding: 0;
+    width: 90%;
   }
   .contenedor-about__imagen {
     width: 50vw;
@@ -174,6 +175,7 @@
   }
   .contenedor-about__card div{
     align-items: center;
+    padding: 0;
   }
 
   .contenedor__cards{
