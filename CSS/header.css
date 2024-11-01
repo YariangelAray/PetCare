@@ -38,6 +38,7 @@
 
 .encabezado__link-menu{
   display: none;
+  position: relative;
 }
 
 .encabezado__link:hover{
@@ -49,3 +50,44 @@
   width: 5vw;
   border-radius: 50%;
 }
+
+.checkbox{
+  display: none;
+}
+
+.encabezado__menu-desplegable{
+  background-color: var(--color-principal-transparente);
+  width: 0;
+  height: 0;
+  position: absolute;
+  overflow: hidden;
+  right: 10px;
+  transition: 0.5s;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius:0 0 15px 15px;
+  padding: 10px 0;
+}
+.encabezado__link-texto{
+  font-size: 1rem;
+  display: flex;
+  text-decoration: none;
+  color: var(--color5);
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  padding-left: 10px;
+}
+.encabezado__link-texto:hover{
+  background-color: var(--color-principal);
+}
+
+.checkbox:checked ~ .encabezado__link-menu
+.encabezado__menu-desplegable{
+  width: 100px;
+  height: 160px;
+}
+
