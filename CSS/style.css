@@ -125,36 +125,36 @@
     width: 90%;
   }
   .contenedor__titulo{
-    font-size: 8vw;
+    font-size: 10vw;
   }
   .contenedor__subtitulo, .circulo-info__titulo{
-    font-size: 5vw;
+    font-size: 6vw;
   }
   .contenedor__parrafo,
-  .detalles__titulo{
-    font-size: 3vw;
+  .detalles__titulo,
+  .boton-principal{
+    font-size: 4vw;
   }
   .contenedor__parrafo-pequeño,
   .detalles__texto,
-  .detalles__link,
-  .boton-principal{
-    font-size: 2.5vw;
+  .detalles__link{
+    font-size: 3.5vw;
   }
   
   .boton-principal{
-    width: 25vw;
+    width: 30vw;
   }
   .card-simple{
-    width: 40vw;
+    width: 50vw;
   }
   .card-simple__imagen{
-    width: 28vw;
-    height: 28vw;
+    width: 40vw;
+    height: 40vw;
   }
 
   .circulo-info{
-    width: 24vw;
-    height: 24vw;
+    width: 30vw;
+    height: 30vw;
   }
   .contenedor-about__card .contenedor__titulo,
   .contenedor-about__card .contenedor__parrafo {
@@ -187,8 +187,6 @@
 
   .contenedor-detalles__grid {
     grid-template-columns: 1fr;
-    gap: 10px;
-    grid-auto-rows: 20vw;
   }
   .contenedor__parrafo-grande{
     font-size: 5vw;
