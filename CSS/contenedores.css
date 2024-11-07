@@ -1,7 +1,7 @@
 .contenedor__textos{
   width: 70%;
   text-align: center;
-  overflow-wrap: break-word;
+  overflow-wrap: break-word; /*permite que las palabras largas se dividan y continúen en la siguiente línea en lugar de desbordarse del contenedor.*/
 }
 
 .contenedor__textos .parrafo{
@@ -57,8 +57,8 @@
   display: flex;
   width: 100%;
   margin-top: 50px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: space-evenly;   /* para alinear y distribuir elementos dentro de un contenedor flex, tienen la misma cantidad de espacio entre ellos. */
+  flex-wrap: wrap; /* Los elementos se colocan en una sola línea, y si no caben, se comprimen o desbordan el contenedor. */
 }
 
 .card-simple{
